@@ -1,0 +1,43 @@
+.App {
+  display: flex; 
+  flex-flow: column nowrap; 
+
+  margin: 2em;
+align-items: center;
+}
+
+img {
+  object-fit: scale-down; 
+  max-width: 100%; 
+  margin: 0 auto;
+  display:block; 
+}
+
+footer img {
+  width: 4em; 
+  height: 4em; 
+  margin: 2em 1em;
+}
+
+footer {
+  width: 100%; 
+  display: flex; 
+  flex-flow: row nowrap; 
+  justify-content: flex-end;
+}
+
+
+h1 {
+  text-align: center; 
+}
+
+h2 {
+  text-align: center; 
+  font-size: 6em;
+  margin: 0.1em;
+}
+
+.timer {
+  font-family: monospace; 
+  font-size: 2em;
+}
