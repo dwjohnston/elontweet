@@ -2,4 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Hosted on Github pages. 
 
+It's not particularly clever. If Elon apologizes, I will need to update it manually. 
+
 Check out my other project: [https://geoplanets.io](https://geoplanets.io). 
