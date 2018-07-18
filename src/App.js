@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import tweet from './tweet.jpg';
 import github from "./github.png"; 
 import './App.css';
+import TweetEmbed from 'react-tweet-embed'
 
 
 const startTime = 1531649400*1000; //15-07-2018 10:10 UTC
-
+const endTime = 1531888860000 //Wed, 18 Jul 2018 04:41 GMT
 
 String.prototype.toHHMMSS = function () {
   var sec_num = parseInt(this, 10)/1000; // don't forget the second param
@@ -51,12 +52,15 @@ class App extends Component {
           <h1>Has Elon Musk Apologised For This Awful Tweet Yet?</h1>
         </header> 
         
-          <h2> NO!</h2> 
+          <h2> YES</h2> 
 
-          <p> It's been: </p> 
 
-        <Timer/>
-
+  <TweetEmbed id='1019472152796381185' />
+        <p> It took: </p> 
+        <div className ="timer"> 
+        {(endTime - startTime).toString().toHHMMSS()}
+        </div> 
+        <p className ="sub">Ish. I don't have a good handle of when exactly the original tweet occured</p> 
 
         <footer> 
           <a href = "https://github.com/dwjohnston/elontweet"><img src = {github}/>  </a> 
