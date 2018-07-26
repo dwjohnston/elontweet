@@ -5,7 +5,7 @@ import './App.css';
 import TweetEmbed from 'react-tweet-embed'
 
 
-const startTime = 1531649400*1000; //15-07-2018 10:10 UTC
+const startTime = 1531638600000; //15-07-2018 7:10am GMT
 const endTime = 1531888860000 //Wed, 18 Jul 2018 04:41 GMT
 
 String.prototype.toHHMMSS = function () {
@@ -60,8 +60,6 @@ class App extends Component {
         <div className ="timer"> 
         {(endTime - startTime).toString().toHHMMSS()}
         </div> 
-        <p className ="sub">Ish. I don't have a good handle of when exactly the original tweet occured</p> 
-
         <footer> 
           <a href = "https://github.com/dwjohnston/elontweet"><img src = {github}/>  </a> 
         </footer>  
